@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SpashScreen</class>
+ <widget class="QMainWindow" name="SpashScreen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>416</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SplashScreen</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>10</number>
+    </property>
+    <property name="topMargin">
+     <number>10</number>
+    </property>
+    <property name="rightMargin">
+     <number>10</number>
+    </property>
+    <property name="bottomMargin">
+     <number>10</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">QFrame{
+	background-color:rgb(56, 58, 89);
+	color: rgb(220, 220, 255);
+	border-radius:10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>761</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI</family>
+         <pointsize>40</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(254, 121, 199)</string>
+       </property>
+       <property name="text">
+        <string>&lt;strong&gt;V&lt;/strong&gt;O&lt;i&gt;CALL&lt;/i&gt;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>140</y>
+         <width>761</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(98, 114, 164)</string>
+       </property>
+       <property name="text">
+        <string>&lt;strong&gt;Votre&lt;/strong&gt; assistant vocal</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>240</y>
+         <width>641</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar{
+background-color: rgb(98, 114, 164);
+color:rgb(200, 200, 200);
+border-style:none;
+border-radius:10px;
+text-align:center;
+}
+
+QProgressBar::chunk{
+border-radius:10px;
+background-color:qlineargradient(spread:pad, x1:0, y1:0.523, x2:0.98, y2:0.505682, stop:0 rgba(254, 121, 199, 255), stop:1 rgba(170, 0, 255, 255))
+}</string>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_information">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>280</y>
+         <width>761</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(98, 114, 164)</string>
+       </property>
+       <property name="text">
+        <string>Chargement ...</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>360</y>
+         <width>761</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(98, 114, 164)</string>
+       </property>
+       <property name="text">
+        <string>&lt;strong&gt;Created&lt;/strong&gt; &lt;i&gt;by Xenatronics&lt;/i&gt;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <zorder>label_2</zorder>
+      <zorder>label</zorder>
+      <zorder>progressBar</zorder>
+      <zorder>label_information</zorder>
+      <zorder>label_4</zorder>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
